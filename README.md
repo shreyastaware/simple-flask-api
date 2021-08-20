@@ -1,10 +1,11 @@
 # simple-flask-api
 
-API Endpoint or URL: https://authbridge-flask-api.herokuapp.com/housing-prices
+### API Endpoint or URL: https://authbridge-flask-api.herokuapp.com/housing-prices
 
 It can only accept POST requests.
 
 Send form encoded data in the form of dictionary with the following keys:
+
 ['MSSubClass', 'MSZoning', 'LotFrontage', 'LotArea', 'Street', 'Alley',
        'LotShape', 'LandContour', 'Utilities', 'LotConfig', 'LandSlope',
        'Neighborhood', 'Condition1', 'Condition2', 'BldgType', 'HouseStyle',
