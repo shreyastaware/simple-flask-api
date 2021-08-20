@@ -14,7 +14,9 @@ with open("/model.pickle", "rb") as f:
     __model = pickle.load(f)
 
 if __name__ == "__main__":
-    app.run(port=33507)
+    import os
+    port = int(os.environ.get('PORT', 33507))    
+    app.run(host='0.0.0.0', port=port)
 
 @app.route('/housing-prices', methods = ['GET', 'POST'])
 def predict_alphanumeric_text():
