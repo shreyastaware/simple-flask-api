@@ -37,7 +37,7 @@ REQUEST BODY:
  
      • {
 	    • 	"probability": 0.9,
-	    • "request_id": 4,
+	    •   "request_id": 4,
 	    • 	"result": <Sale Price>,
 	    • 	"status": 1/0(1: Successful hit, 0: Failure)
      • }
