@@ -40,8 +40,8 @@ REQUEST BODY:
 	    • "request_id": 4,
 	    • 	"result": <Sale Price>,
 	    • 	"status": 1/0(1: Successful hit, 0: Failure)
-    • 	}
-
+     • }
+	
   ERRORS IN API RESPONSE:
   
   ValueError: Response content is not valid JSON status = 503/ 504 error
