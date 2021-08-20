@@ -7,17 +7,14 @@ global __model
 
 app = Flask(__name__)
 
-with open("columns.json", "r") as f:
+with open("/app/columns.json", "r") as f:
     __data_columns = json.load(f)['data_columns']
 
-with open("/model.pickle", "rb") as f:
+with open("/app/model.pickle", "rb") as f:
     __model = pickle.load(f)
 
 if __name__ == "__main__":
-    import os
-    port = int(os.environ.get('PORT', 5000))    
-    # Threaded option to enable multiple instances for multiple user access support
-    app.run(threaded=True, port=port, host='0.0.0.0')
+    app.run()
 
 @app.route('/housing-prices', methods = ['GET', 'POST'])
 def predict_alphanumeric_text():
